@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona de Combate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="menu">
+        <h1>🎯 ZONA DE COMBATE</h1>
+        <p>WASD para moverte</p>
+        <p>Mouse para apuntar y disparar</p>
+        <button onclick="iniciarJuego()">JUGAR</button>
+    </div>
+
+    <canvas id="game"></canvas>
+
+    <div id="hud">
+        ❤️ Vida: <span id="vida">100</span>
+        &nbsp;&nbsp;
+        🎯 Puntos: <span id="puntos">0</span>
+    </div>
+
+    <div id="gameOver">
+        <h1>GAME OVER</h1>
+        <p>Puntuación: <span id="puntuacionFinal">0</span></p>
+        <button onclick="iniciarJuego()">VOLVER A JUGAR</button>
+    </div>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
